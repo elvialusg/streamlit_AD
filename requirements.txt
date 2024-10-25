@@ -5,3 +5,7 @@ pydeck
 openpyxl
 seaborn
 numpy 
+matplotlib.pyplot 
+plotly.graph_objs
+plotly.graph_objs 
+git
