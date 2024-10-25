@@ -10,7 +10,7 @@ import pydeck
 
 
 #@st.cache_df_encuesta
-df_encuesta = pd.read_excel(r'C:\\Users\\bib_referencista6\\OneDrive - Universidad de Manizales\\Documentos\\ARCHIVOSJSONCERTIFICACION\\data\\AI_Chatbots_Students.xlsx')
+df_encuesta = pd.read_excel(r'data/AI_Chatbots_Students.xlsx')
 
 
 df_encuesta['Q2']= df_encuesta['Q2'].str.strip()
@@ -20,18 +20,20 @@ print(df_encuesta)
 
 df_limpia = df_encuesta.drop(index=99)
 
+st.sidebar.markdown('<h3 style="color :#17202a"><center>ÉTICA</h3></center>', unsafe_allow_html=True)
+st.sidebar.markdown('<h3 style="color :#17202a"><center>INTEGRIDAD</h3></center>', unsafe_allow_html=True)
+st.sidebar.markdown('<h3 style="color :#17202a"><center>RESPONSABILIDAD</h3></center>', unsafe_allow_html=True)
+st.sidebar.markdown('<h3 style="color :#17202a"><center>RENDICIÓN DE CUENTAS</h3></center>', unsafe_allow_html=True)
+st.sidebar.markdown('<h3 style="color :#17202a"><center>PROTECCIÓN DE DATOS</h3></center>', unsafe_allow_html=True)
+st.sidebar.markdown('<h3 style="color :#17202a"><center>DERECHOS HUMANOS</h3></center>', unsafe_allow_html=True)
 
-
-st.subheader('')
-
-st.sidebar.image(r'C:\\Users\\bib_referencista6\\OneDrive - Universidad de Manizales\\Documentos\\ARCHIVOSJSONCERTIFICACION\\Streamlit_TalentoTech\\img\\descarga.jpeg')
-st.sidebar.image(r'C:\Users\bib_referencista6\OneDrive - Universidad de Manizales\Documentos\ARCHIVOSJSONCERTIFICACION\Streamlit_TalentoTech\img\valoreshumanos.png')
-st.sidebar.image(r'C:\Users\bib_referencista6\OneDrive - Universidad de Manizales\Documentos\ARCHIVOSJSONCERTIFICACION\Streamlit_TalentoTech\img\transparencia.png')
-st.sidebar.image(r'C:\Users\bib_referencista6\OneDrive - Universidad de Manizales\Documentos\ARCHIVOSJSONCERTIFICACION\Streamlit_TalentoTech\img\Seguridad.png')
+st.sidebar.markdown('<h4 style="color :#17202a"><center>!La IA generativa se ha convertido en una de las mejores herramientas como apoyo a la educación, es cuestión de educar y formar a los estudiantes en un uso responsable!</h4></center>', unsafe_allow_html=True)
 
 
 st.markdown('<h3 style="color :#17202a"><center>𝘌𝘓 𝘋𝘌𝘚𝘈𝘍𝘐𝘖 𝘌𝘛𝘐𝘊𝘖 𝘋𝘌 𝘓𝘈 𝘐𝘈 𝘠 𝘚𝘜 𝘜𝘚𝘖 𝘌𝘕 𝘌𝘚𝘛𝘜𝘋𝘐𝘈𝘕𝘛𝘌𝘚 𝘜𝘕𝘐𝘝𝘌𝘙𝘚𝘐𝘛𝘈𝘙𝘐𝘖𝘚</h3></center>', unsafe_allow_html=True)
-st.image(r'C:\\Users\\bib_referencista6\\OneDrive - Universidad de Manizales\\Documentos\\ARCHIVOSJSONCERTIFICACION\\Streamlit_TalentoTech\\img\\sensory-AGI.png')
+
+
+
                  
 tab1, tab2, tab3, tab4,tab5, tab6, tab7, tab8, tab9= st.tabs(['Datos','Formación','Género','Uso de lA ','Sesgos en la IA','La IA/Educación','T&Valores','Cuestiones Eticas','Analisis de Correlación'])
 
