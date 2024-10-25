@@ -1,11 +1,7 @@
-streamlit
-pandas
-matplolib
+streamlit                                                  
+seaborn                                                  
+pandas                                                    
+numpy                                                   
+matplotlib                  
 pydeck
-openpyxl
-seaborn
-numpy 
-matplotlib.pyplot 
-plotly.graph_objs
-plotly.graph_objs 
-git
+plotly
